@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Курочка ряба</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+	<div class="container">
+		<h1 class="row">Курочка ряба</h1>
+		<p class="row">
+			Необходимо заменить элементы в фигурных скобках {}:<br> {"text":["Жили-были {var1} да {var2}","Была у них {var3}","Снесла {var3} {var4}, не простое - золотое","- {var1} бил, бил - не разбил","- {var2} била, била - не разбила","{var5} бежала, {var6} задела, {var4} упало и разбилось.","{var1} плачет, {var2} плачет, а {var3} кудахчет:","{speach}"]}</p>
+		<form id="messages" class="row">
+			<label for="var1" class="col-6">var1</label>
+			<input class="col-6" type="text" placeholder="дед" name="var1" value="">
+			<label for="var2" class="col-6">var2</label>
+			<input class="col-6" type="text" placeholder="баба" name="var2" value="">
+			<label for="var3" class="col-6">var3</label>
+			<input class="col-6" type="text" placeholder="курочка Ряба" name="var3" value="">
+			<label for="var4" class="col-6">var4</label>
+			<input class="col-6" type="text" placeholder="яичко" name="var4" value="">
+			<label for="var5" class="col-6">var5</label>
+			<input class="col-6" type="text" placeholder="мышка" name="var5" value="">
+			<label for="var6 "class="col-6">var6</label>
+			<input class="col-6" type="text" placeholder="хвостиком" name="var6" value="">
+			<label for="speach "class="col-6">speach</label>
+			<input class="col-6" type="text" placeholder="что же она сказала?" name="speach" value="">
+		</form>
+			<div class="row">
+        		<a id="button-fetch" class="btn btn-primary">
+            		Создать
+          		</a>
+        	</div>
+		
+		
+		<div class="row">
+			<div id="result"></div>
+		</div>
+	</div>
+
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+    <!-- 
+    <script src="./js/utils.js"></script> -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
